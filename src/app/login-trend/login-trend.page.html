@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Login Trend
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>
+              Login Api Trend (every 5 mins)
+            </ion-card-title>     
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #loginApi></canvas>
+        </ion-card-content>
+      </ion-card>
+    
+      <ion-card>
+          <ion-card-header>
+              <ion-card-title>
+                All Api Trend (every 5 mins) 
+              </ion-card-title>     
+          </ion-card-header>
+          <ion-card-content>
+            <canvas #allApi></canvas>
+          </ion-card-content>
+        </ion-card>
+
+</ion-content>

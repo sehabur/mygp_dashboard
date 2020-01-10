@@ -1,0 +1,165 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+          <!-- <ion-card style="height: 92%" id="rounded">
+              <ion-card-header>
+
+                
+                <ion-card-subtitle>MSISDN MAU This Month</ion-card-subtitle>
+                <ion-card-title style="padding-bottom: 16px; color: #7FFF00; font-size: 24px;">{{ mauData['msisdnMau'] }} Mn</ion-card-title>
+
+                <ion-card-subtitle>Today Unique MSISDN</ion-card-subtitle>
+                <ion-card-title style=" padding-bottom: 18px; color: #00FF00; font-size: 24px;">{{ mauData['todayUniq'] }} K</ion-card-title>
+
+                <ion-card-subtitle>*updated till {{ mauData['updateHour'] }}:00 today</ion-card-subtitle>
+                <ion-card-subtitle>
+                  <a href="mau-progression">See Details</a> 
+
+                </ion-card-subtitle>
+                
+              </ion-card-header>
+            </ion-card> -->
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>MSISDN MAU This Month</ion-card-subtitle>
+                    <ion-card-title style=" color: #7FFF00; font-size: 26px;">{{ mauData['msisdnMau'] }} Mn</ion-card-title>
+                </ion-card-header>
+              </ion-card>
+
+              <ion-card>
+                  <ion-card-header>
+                      <ion-card-subtitle>Today Unique MSISDN</ion-card-subtitle>
+                      <ion-card-title style=" color: #00FF00; font-size: 24px;">{{ mauData['todayUniq'] }} K</ion-card-title>
+                  </ion-card-header>
+                </ion-card>
+
+                <ion-card-subtitle style="margin-left: 20px; margin-top: 16px; color: #fff; font-style: italic">*updated till {{ mauData['updateHour'] }}:00 today</ion-card-subtitle>
+
+
+
+      </ion-col>
+
+      <ion-col>
+          <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>Calender MAU</ion-card-subtitle>
+                <ion-card-title style="color: #FFCA28;">{{ mauData['calenderMau'] }} Mn</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+
+            <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Rolling 30 Days MAU</ion-card-subtitle>
+                  <ion-card-title style="color: #FFA000;">{{ mauData['rolling30Mau'] }} Mn</ion-card-title>
+                </ion-card-header>
+              </ion-card>
+
+
+              <ion-card>
+                  <ion-card-header>
+                    <ion-card-subtitle>Yesterday DAU</ion-card-subtitle>
+                    <ion-card-title style="color: #F57C00;">{{ mauData['yesterdayDau'] }} Mn</ion-card-title>
+                  </ion-card-header>
+                </ion-card>
+
+
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>        
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>        
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>MSISDN DAU</ion-card-subtitle>
+            <ion-card-title>{{ mauData['msisdnDau'] }}Mn</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>MSISDN MAU</ion-card-subtitle>
+            <ion-card-title>{{ mauData['msisdnMau'] }}Mn</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>        
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Retention</ion-card-subtitle>
+            <ion-card-title>{{ mauData['retention'] }}%</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  <!-- <ion-card style="margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+    <ion-card-header>
+        <ion-card-title class="ion-text-center">MAU Target vs Achievement</ion-card-title>
+      
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas></canvas>
+    </ion-card-content>
+  </ion-card> -->
+
+  <ion-card style="margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+    <ion-card-header>
+        <ion-card-title class="ion-text-center">Active User Trend</ion-card-title>
+      
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #dauMau></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="margin-left: 20px; margin-right: 20px; margin-top: 20px;">
+      <ion-card-header>
+          <ion-card-title class="ion-text-center">Revenue Trend</ion-card-title>
+        
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #totalRevenue></canvas>
+      </ion-card-content>
+    </ion-card>
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div id="container" style="height: 275px;"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+    
+</ion-content>

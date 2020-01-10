@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "767343270685",
+    "firebase_url": "https://mygpreporting.firebaseio.com",
+    "project_id": "mygpreporting",
+    "storage_bucket": "mygpreporting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767343270685:android:fee970f174bb20d0c51ff4",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767343270685-eemurgisvbpo6chbs1lt4od9vra2f9gu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6DCXuKHV61gdpoSMrQfa-4txm5klShX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767343270685-eemurgisvbpo6chbs1lt4od9vra2f9gu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

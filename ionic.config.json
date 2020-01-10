@@ -1,0 +1,7 @@
+{
+  "name": "MyGPDashboard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
